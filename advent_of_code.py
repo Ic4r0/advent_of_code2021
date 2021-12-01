@@ -1,5 +1,8 @@
 """ Main file for the advent_of_code2021 repository
-To use this run 'python advent_of_code *day* *part*'
+
+To use this run 'python advent_of_code *test* *day* *part*', where test is an optional flag used to
+test the code for a chosen day, day is an integer number between 1 and 25, and part is an optional
+integer number between 1 and 2
 
 Author: Ic4r0 - https://github.com/Ic4r0
 
