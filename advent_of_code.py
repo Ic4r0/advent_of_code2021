@@ -29,7 +29,7 @@ def save_xmas(selected_day: int, selected_part: int = None, is_test: bool = Fals
         day_1(selected_part, is_test)
     elif selected_day == 2:
         day_2(selected_part, is_test)
-    elif selected_day < 26:
+    elif 0 < selected_day < 26:
         print('No available solution for the selected day')
     else:
         print('Choose a day between 1 and 25')
