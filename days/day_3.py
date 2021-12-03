@@ -75,7 +75,6 @@ def part_2(input_list: list) -> int:
         return -1
 
 
-
 def day_3(selected_part: int = None, test: bool = False):
     """ Needed to select which part of the 3rd day we want to execute
 
