@@ -28,3 +28,21 @@ def parse_by_line(selected_day: int, int_list: bool = True, is_test: bool = Fals
         return list_from_file
     else:
         raise IOError('There is no input file for day ' + str(selected_day))
+
+
+def parse_single_line(selected_day: int, is_test: bool = False) -> str:
+    """ Parse input file from a selected day by line
+
+    :param selected_day: selected Advent of Code day
+    :param is_test: flag to parse a test input
+    :return: list containing file parsed by line
+    """
+    file_path = os.getcwd() + '\\inputs\\input_' + str(selected_day).zfill(2)
+    if is_test:
+        file_path += '_test'
+    if os.path.isfile(file_path):
+        with open(file_path) as file:
+            single_line = file.read()
+        return single_line.rstrip()
+    else:
+        raise IOError('There is no input file for day ' + str(selected_day))
