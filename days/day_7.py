@@ -7,7 +7,6 @@ Created: 7th December 2021
 
 # imports
 from utils.parse_input import parse_single_line
-from collections import Counter
 
 
 # modules
